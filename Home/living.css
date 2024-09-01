@@ -1,0 +1,77 @@
+.tex{
+    letter-spacing: 2.5px;
+}
+
+
+
+#navbar{
+    position: static;
+    top: 0; 
+    border-bottom: .5px solid black;
+    box-shadow: 0 -.5px rgba(255, 255, 255, 0.25) inset;
+   
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    
+    padding: 10px;
+    
+}
+
+.menu-container {
+    position: relative; /* Keep this relative to the navbar */
+}
+
+.menu-trigger {
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    
+    color: black;
+}
+
+.flyout-menu {
+    position: fixed; /* Position relative to the entire screen */
+    top: 0;
+    left: -200px; /* Start hidden off-screen */
+    width: 200px;
+    height: 100vh;
+    background-color: #444;
+    color: white;
+    transition: left 0.6s ease-in-out;
+}
+
+.flyout-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flyout-menu ul li {
+    padding: 15px;
+    border-bottom: 1px solid #555;
+}
+
+.flyout-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-container:hover .flyout-menu {
+    left: 0; /* Slide in from the left edge of the screen */
+}
+#search_eng{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search_eng span a i{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
